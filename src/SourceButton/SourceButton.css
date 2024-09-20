@@ -1,0 +1,22 @@
+.source-button {
+    width: 63px;
+    height: 63px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.source-button img {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.source-button img:hover {
+    opacity: 0.75;
+}
+
+.source-button img:active {
+    opacity: 0.5;
+}

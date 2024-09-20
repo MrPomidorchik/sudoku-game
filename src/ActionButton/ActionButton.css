@@ -1,0 +1,27 @@
+
+.action-button {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F7E22;
+    background-color: #84E188;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    opacity: 0.75;
+  }
+
+.action-button:active {
+    opacity: 0.5;
+}
+
+/* .action-button:focus,
+.action-button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  } */

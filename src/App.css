@@ -1,0 +1,36 @@
+#root {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header{
+  font-size: 128px;
+  margin: 0;
+  padding: 0;
+  line-height: 95px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+.gaming-field {
+  width: 450px;
+  height: 450px;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  align-self: center;
+}
+
+.action-buttons {
+  display: flex;
+  place-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
