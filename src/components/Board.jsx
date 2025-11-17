@@ -3,7 +3,7 @@ const Board = (props) => {
   const { board, onCellChange } = props;
 
   return (
-    <div className="grid grid-cols-9 border-black border-2">
+    <div className="grid grid-cols-3 border-black border-2">
       {board.map((row, rowIndex) => (
         <div key={rowIndex} className="contents">
           {row.map((cell, collIndex) => (

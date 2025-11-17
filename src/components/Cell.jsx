@@ -1,4 +1,4 @@
-import NotesBoard from "./NotesBoard.jsx";
+import Notes from "./Notes.jsx";
 
 const Cell = (props) => {
   const { value, onChange } = props;
@@ -7,7 +7,7 @@ const Cell = (props) => {
       className="w-[60px] h-[60px] flex justify-center items-center border border-black text-[40px] bg-white"
       onChange={onChange}
     >
-      {value !== 0 ? value : <NotesBoard />}
+      {value !== 0 ? value : <Notes />}
     </div>
   );
 };
