@@ -1,4 +1,4 @@
-import Button from "./Button.jsx";
+import Button from "../components/Button.jsx";
 
 const ControlBar = (props) => {
   return (
@@ -9,9 +9,9 @@ const ControlBar = (props) => {
         ))}
       </div>
       <div className="flex flex-row gap-[5px] w-full">
-        <Button label="Undo" onClick={() => {}} />
-        <Button label="Eraser" onClick={() => {}} />
-        <Button label="Notes" onClick={() => {}} />
+        <Button label="undo-icon" onClick={() => {}} />
+        <Button label="eraser-icon" onClick={() => {}} />
+        <Button label="note-icon" onClick={() => {}} />
       </div>
     </div>
   );

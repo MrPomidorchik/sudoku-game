@@ -1,19 +1,14 @@
-// src/logic/sudoku.js
-
 function createEmptyBoard() {
   return Array.from({ length: 9 }, () => Array(9).fill(0));
 }
 
 function isSafe(board, row, col, num) {
-  // строка
   for (let c = 0; c < 9; c++) {
     if (board[row][c] === num) return false;
   }
-  // столбец
   for (let r = 0; r < 9; r++) {
     if (board[r][col] === num) return false;
   }
-  // блок 3х3
   const br = Math.floor(row / 3) * 3;
   const bc = Math.floor(col / 3) * 3;
   for (let r = br; r < br + 3; r++) {
@@ -51,7 +46,7 @@ function fillBoard(board) {
 }
 
 export const DIFFICULTY_LEVELS = {
-  easy: 30, // сколько ячеек "выбить" (пустых)
+  easy: 30,
   medium: 40,
   hard: 50,
 };
