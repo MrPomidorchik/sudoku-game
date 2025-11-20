@@ -32,10 +32,10 @@ const Cell = (props) => {
       disabled={isDisabled}
       onClick={onClick}
       className={classNames(
-        "relative w-[60px] h-[60px] flex justify-center items-center border border-black text-[40px] bg-white",
+        "relative w-[60px] h-[60px] flex justify-center items-center border border-black text-[40px]",
         cellBorder(r, c),
         isGiven ? "" : " text-[#1C7320]",
-        isSelected ? "bg-[#9CE7A0]" : "",
+        isSelected ? "bg-[#9CE7A0]" : "bg-white",
         !isGiven && !isDisabled ? "bg-[#9CE7A0]" : "",
         isGiven || isDisabled ? "cursor-default" : "cursor-pointer"
       )}

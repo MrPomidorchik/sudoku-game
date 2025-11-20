@@ -26,9 +26,9 @@ const Board = (props) => {
             !isGiven &&
             value !== 0 &&
             solution &&
-            value !== solution[rIdx][cIdx];
+            value !== solution[rowIndex][colIndex];
 
-          const cellNotes = notes?.[rIdx]?.[cIdx] ?? [];
+          const cellNotes = notes?.[rowIndex]?.[colIndex] ?? [];
           const showNotes = value === 0 && cellNotes.length > 0;
           return (
             <Cell
