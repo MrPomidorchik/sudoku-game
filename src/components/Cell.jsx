@@ -1,8 +1,5 @@
 import Notes from "./Notes.jsx";
-
-function classNames(...args) {
-  return args.filter(Boolean).join(" ");
-}
+import { classNames } from "../logic/utils.js";
 
 const cellBorder = (row, col) => {
   const classes = [];
@@ -35,9 +32,10 @@ const Cell = (props) => {
         "relative w-[60px] h-[60px] flex justify-center items-center border border-black text-[40px]",
         cellBorder(r, c),
         isGiven ? "" : " text-[#1C7320]",
-        isSelected ? "bg-[#9CE7A0]" : "bg-white",
+        isSelected ? "bg-[#d6ffd8]" : "bg-white",
         !isGiven && !isDisabled ? "bg-[#9CE7A0]" : "",
-        isGiven || isDisabled ? "cursor-default" : "cursor-pointer"
+        isGiven || isDisabled ? "cursor-default" : "cursor-pointer",
+        isIncorrect ? "bg-[#ffb2b2]" : ""
       )}
     >
       {showNotes ? (
@@ -46,7 +44,7 @@ const Cell = (props) => {
         <div
           className={classNames(
             isGiven ? "" : "",
-            isIncorrect ? "text-red-600 bg-[#e77e7e]" : ""
+            isIncorrect ? "text-red-600" : ""
           )}
         >
           {value}

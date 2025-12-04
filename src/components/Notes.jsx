@@ -1,3 +1,5 @@
+import { classNames } from "../logic/utils";
+
 const NotesBoard = (props) => {
   const { notes } = props;
 
@@ -6,12 +8,10 @@ const NotesBoard = (props) => {
       {Array.from({ length: 9 }, (_, i) => i + 1).map((note) => (
         <div
           key={note}
-          className={
-            "w-5 h-5 flex justify-center items-center text-[13px] text-slate-400" +
-            notes.includes(note)
-              ? ""
-              : " opacity-20"
-          }
+          className={classNames(
+            "w-5 h-5 flex justify-center items-center text-[13px] text-slate-400",
+            notes.includes(note) ? "" : "opacity-0"
+          )}
         >
           {note}
         </div>

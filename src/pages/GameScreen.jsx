@@ -145,6 +145,9 @@ const GameScreen = () => {
       <ControlBar
         onNumberClick={handleNumberClick}
         onEraserClick={handleEraserClick}
+        onUndoClick={handleUndo}
+        onToggleNoteMode={() => setNoteMode((prev) => !prev)}
+        noteMode={noteMode}
       />
     </>
   );

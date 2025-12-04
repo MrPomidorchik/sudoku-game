@@ -12,13 +12,13 @@ const ControlBar = (props) => {
     <div className="flex flex-col gap-2.5 justify-center">
       <div className="flex flex-row gap-[5px] justify-between">
         {Array.from({ length: 9 }, (_, i) => i + 1).map((num) => (
-          <Button key={num} label={num} onClick={onNumberClick(num)} />
+          <Button key={num} label={num} onClick={() => onNumberClick(num)} />
         ))}
       </div>
       <div className="flex flex-row gap-[5px] w-full">
-        <Button label="undo-icon" onClick={onUndoClick} />
-        <Button label="eraser-icon" onClick={onEraserClick} />
-        <Button label="note-icon" onClick={onToggleNoteMode} />
+        <Button label="undo" onClick={onUndoClick} />
+        <Button label="eraser" onClick={onEraserClick} />
+        <Button label="note" isSwitcher={noteMode} onClick={onToggleNoteMode} />
       </div>
     </div>
   );
